@@ -1,0 +1,41 @@
+{% extends "index.html" %}
+
+{% block head %}
+<title>Projects</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/projectsstyle.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Amel Rahmanovic</h1>
+    <p>Professional ChatGPTer. Aspiring programmer :&#41;</p>
+</section>
+
+<section class="projects_section">
+    <div class="project_container">
+        <!-- Delar listan i grupper om 2 och om det är udda fyllas det med tomt värde -->
+        {% for row in projects|batch(2, '') %}
+        <div class="project_row">
+            {% for project in row %}
+            <!-- Säger att rendera baraom project finns -->
+                {% if project %}
+                <div class="project_wrapper">
+                    <a class="project_card"
+                    href="{{ url_for('project_detail', project_id=project.project_id) }}"
+                    aria-label="{{ project.project_name }}">
+                        <p>{{ project.project_name }}</p>
+                    </a>
+                    <div class="languages">
+                        {% for tech in project.techniques_used %}
+                            <span>{{ tech }}</span>
+                        {% endfor %}
+                        <p class="one-liner">{{ project.short_description }}</p>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
