@@ -1,0 +1,52 @@
+[
+    {
+        "project_id": 1,
+        "project_name": "Portfolio",
+        "short_description": "This is my personal portfolio showcasing some projects I've worked on",
+        "long_description": "My personal portfolio showcasing some of the projects I’ve worked on. It also includes a bit about me and my skills in web development.",
+        "external_link": "",
+        "img": "/img/Icon.png",
+        "techniques_used": [
+            "HTML",
+            "CSS",
+            "Python",
+            "Flask & Jinja"
+        ]
+    },
+    
+    {
+        "project_id": 2,
+        "project_name": "Förfesteriet",
+        "short_description": "A website for our concept of making the pre-party the main event",
+        "long_description": "A website for FörFesteriet, an initiative highlighting pre-parties at Linköping University. It helps students plan and attend unique pre-parties that become the main event of the evening.",
+        "external_link": "https://forfesteriet.xyz/",
+        "img": "/img/Project2.png",
+        "techniques_used": [
+            "HTML",
+            "CSS"
+        ]
+    },
+
+        {
+        "project_id": 3,
+        "project_name": "NoriStudio",
+        "short_description": "A app built for a growin clothing brand to showcase products and style",
+        "long_description": "A mobile app created for NoriStudio, a startup clothing brand focused on t-shirts. The app makes it easy to showcase products and support sales and marketing.",
+        "external_link": "https://www.noristudio.se/",
+        "img": "/img/Project3.png",
+        "techniques_used": [
+            "Flutter"
+        ]
+    },
+
+        {
+        "project_id": 4,
+        "project_name": "Coming Soon",
+        "short_description": "Lorem",
+        "long_description":"This is my personal portfolio showcasing some projects I've worqqqqqqqqqq",
+        "external_link": "",
+        "img": "/img/",
+        "techniques_used": [
+        ]
+    }
+]

@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+
+{% block body_class %}project-detail-page{% endblock %}
+
+{% block head %}
+<title>Project</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/project_detailstyle.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="project">
+    <h1 class="project-title">{{ project.project_name }}</h1>
+
+    <div class="project-image">
+        <img src="{{ url_for('static', filename=project.img) }}" alt="{{ project.project_name }}">
+    </div>
+
+    <div class="project-description">
+        <p>{{ project.long_description }}</p>
+    </div>
+
+    <div class="project-visit">
+        <a class="visit-button" href="{{ project.external_link }}" target="_blank">Visit</a>
+    </div>
+</section>
+{% endblock %}
