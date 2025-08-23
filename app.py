@@ -1,8 +1,9 @@
 from flask import Flask, render_template
 import data_layer
 
-# Pekar på json filen(databasen)
-json_data = "./data.json"
+from pathlib import Path
+BASE_DIR = Path(__file__).resolve().parent
+json_data = str(BASE_DIR / "data.json")
 
 # Laddar in json data
 projects_data = data_layer.load(json_data)
