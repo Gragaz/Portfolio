@@ -4,7 +4,7 @@
         "project_name": "Portfolio",
         "short_description": "This is my personal portfolio showcasing some projects I've worked on",
         "long_description": "My personal portfolio showcasing some of the projects I’ve worked on. It also includes a bit about me and my skills in web development.",
-        "external_link": "",
+        "external_link": "https://amelrahmanovicdev.xyz/",
         "img": "/img/Icon.png",
         "techniques_used": [
             "HTML",
