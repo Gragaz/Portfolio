@@ -5,7 +5,7 @@
         "short_description": "This is my personal portfolio showcasing some projects I've worked on",
         "long_description": "My personal portfolio showcasing some of the projects I’ve worked on. It also includes a bit about me and my skills in web development.",
         "external_link": "https://amelrahmanovicdev.xyz/",
-        "img": "/img/Icon.png",
+        "img": "/img/A.png",
         "techniques_used": [
             "HTML",
             "CSS",
@@ -43,9 +43,9 @@
         "project_id": 4,
         "project_name": "Coming Soon",
         "short_description": "Lorem",
-        "long_description":"This is my personal portfolio showcasing some projects I've worqqqqqqqqqq",
+        "long_description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut velit dapibus, dignissim magna et, convallis lacus. ",
         "external_link": "",
-        "img": "/img/",
+        "img": "/img/tummeupp.png",
         "techniques_used": [
         ]
     }

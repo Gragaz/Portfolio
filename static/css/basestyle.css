@@ -17,8 +17,10 @@ nav{
 /* Logo CSS */
 .header img{
     max-width: 180px;
-    width: 100%;
+    width: 40%;
     height: auto;
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
 /* list-style tar bort punktform, inline block sätter länkarna sidles */
