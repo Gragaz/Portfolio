@@ -117,7 +117,6 @@
 
 /* ---- MOBIL ---- */
 @media (max-width: 600px) {
-    /* Containern sköter hela layouten */
     .project_container {
         display: flex;
         flex-direction: column;
@@ -125,7 +124,6 @@
         gap: 20vh; 
     }
 
-    /* Gör rows "osynliga" layoutmässigt */
     .project_row {
         display: contents;
     }

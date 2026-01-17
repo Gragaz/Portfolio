@@ -121,7 +121,6 @@ main {
         justify-content: space-between;
     }
 
-    /* Nav bar */
     .nav-links{
         display: none;
         position: fixed; 
@@ -136,7 +135,6 @@ main {
         z-index: 1000;
     }
 
-    /* Länkarna */
     .nav-links ul {
         display: flex;
         flex-direction: column;
