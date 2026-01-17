@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 body.project-detail-page {
     min-height: 100vh; 
     display: flex;
@@ -6,8 +10,8 @@ body.project-detail-page {
     background: linear-gradient(
     to bottom, 
     black 0vh, 
-    black 85vh, 
-    #8b8245 110vh
+    black 65vh, 
+    #8b8245 100vh
 );
 }
 
@@ -35,16 +39,15 @@ body.project-detail-page {
     overflow: hidden;
     max-height: 45vh; 
     object-fit: cover;
+    margin-bottom: 2vh;
     border-radius: 1.5vw;
-    margin-bottom: 3vh;
     border: solid whitesmoke;
 }
 
 /* Description */
 .project-description {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     text-align: left;
-    margin: 0 auto 3vh auto;
     width: 80%;
     margin-left: 30px;
     line-height: 1.6;
@@ -70,4 +73,31 @@ body.project-detail-page {
 /* Hover effekt */
 .visit-button:hover {
     background: #d4c768;
+}
+
+
+/* ---- MOBIL ---- */
+@media (max-width: 1024px) {
+
+}
+
+/* ---- MOBIL ---- */
+@media (max-width: 600px) {
+    .project {
+    padding-top: 12vh;
+    max-width: 70vw; 
+}
+
+.project-title {
+    font-size: 1.5rem;
+}
+
+.project-description {
+    font-size: 0.8rem;
+    text-align: left;
+    width: 80%;
+    margin-left: 30px;
+    line-height: 1.6;
+    letter-spacing: 0.05vw;
+}
 }

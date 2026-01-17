@@ -17,7 +17,6 @@
         {% for row in projects|batch(2, '') %}
         <div class="project_row">
             {% for project in row %}
-            <!-- Säger att rendera baraom project finns -->
                 {% if project %}
                 <div class="project_wrapper">
                     <a class="project_card"

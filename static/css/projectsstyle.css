@@ -4,7 +4,7 @@
     flex-direction: column; 
     justify-content: center; 
     align-items: center;    
-    min-height: 80vh;        
+    min-height: 85vh;        
     text-align: center;
     color: whitesmoke;
 }
@@ -12,13 +12,13 @@
 /* För mitt namn i mitten */
 .hero h1 {
     font-size: clamp(2rem, 5vw, 4rem);      
-    margin-bottom: 0.5rem;   
+    margin-bottom: 0.5rem; 
 }
 
 /* Texten under */
 .hero p {
     font-size: clamp(1rem, 2.5vw, 1.5rem);     
-    color: #6B5718;            
+    color: #6B5718;         
 }
 
 
@@ -77,8 +77,7 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-
-/* Texten under kortet */
+/* Texten precis under kortet */
 .languages {
     font-size: 1.2rem;
     color: whitesmoke;
@@ -103,6 +102,46 @@
 .languages .one-liner {
     font-size: 0.9rem;
     margin-top: 10px;
-    color: #ccc;
+    color: white
 }
 
+
+
+
+
+
+
+
+
+
+
+/* ---- MOBIL ---- */
+@media (max-width: 600px) {
+    /* Containern sköter hela layouten */
+    .project_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20vh; 
+    }
+
+    /* Gör rows "osynliga" layoutmässigt */
+    .project_row {
+        display: contents;
+    }
+
+        
+    .project_wrapper {
+        width: 90%;
+    }
+
+
+    .project_card {
+        font-size: 4vw;
+    }
+
+    .languages {
+        text-align: center;
+        padding-left: 0;
+    }
+}

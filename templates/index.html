@@ -14,12 +14,22 @@
 <!--NAVBARR-->
     <section class="header">
         <nav>
-            <a href="{{ url_for('projects_page') }}"><img src="{{ url_for('static', filename='img/Icon.png') }}" alt=""></a>
+            <a href="{{ url_for('projects_page') }}">
+                <img src="{{ url_for('static', filename='img/Icon.png') }}" alt=""></a>
+            
+            <!-- Menu toggle -->
+            <input type="checkbox" id="menu-toggle" />
+            <label class="menu-icon" for="menu-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </label>
+
             <div class="nav-links">
                 <ul>
                     <li><a href="{{ url_for('projects_page') }}">Projects</a></li>
                     <li><a href="{{ url_for('about_page') }}">About</a></li>
-                    <li><a href="#" onclick="document.getElementById('contact').scrollIntoView(); return false;">Contact</a></li>
+                    <li><a href="#" onclick="document.getElementById('contact').scrollIntoView(); document.getElementById('menu-toggle').checked = false; return false;">
+                        Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -53,7 +63,7 @@
                 </div>
             </div>
         <div class="footer-bottom">
-            <p><i class="fa fa-copyright"></i> Copyright 2025 | Amel Rahmanovic</p>
+            <p><i class="fa fa-copyright"></i> Copyright 2026 | Amel Rahmanovic</p>
         </div>
     </footer>
 </body>
